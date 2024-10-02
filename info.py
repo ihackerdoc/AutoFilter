@@ -93,7 +93,7 @@ REFERAL_COUNT = int(environ.get('REFERAL_COUNT', '20')) # number of referal coun
 REFERAL_PREMEIUM_TIME = environ.get('REFERAL_PREMEIUM_TIME', '1 week')
 OWNER_USERNAME = environ.get('OWNER_USERNAME', 'i_hackerdoc') # owner username without @
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002191068118')) #Log channel id ( make sure bot is admin )
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '')) #Log channel id ( make sure bot is admin )
 DUMP_CHNL = int(environ.get('DUMP_CHNL', '-1002379981847'))
 
 # Verify
@@ -107,7 +107,7 @@ IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8080")
+PORT = environ.get("PORT", "8000")
 BOT_USERNAME = environ.get("BOT_USERNAME", "tstmovies_bot")
 BOT_NAME = environ.get("BOT_NAME", "◢ ᴍᴏᴠɪᴇᴛɪᴍᴇ ✗ ʙᴏᴛ ◤")
 BOT_ID = environ.get("BOT_ID", "7533475307")
