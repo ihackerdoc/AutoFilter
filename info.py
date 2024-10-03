@@ -101,13 +101,13 @@ VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( Fa
 HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/dochacks/6') # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'just2earn.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'b6d056c0bbfae325cbc6c55f3a741507bd92bc54')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'be3907f512ff39d0ac3d1463f95528845be60f07')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8000")
+PORT = environ.get("PORT", "8080")
 BOT_USERNAME = environ.get("BOT_USERNAME", "tstmovies_bot")
 BOT_NAME = environ.get("BOT_NAME", "◢ ᴍᴏᴠɪᴇᴛɪᴍᴇ ✗ ʙᴏᴛ ◤")
 BOT_ID = environ.get("BOT_ID", "7533475307")
